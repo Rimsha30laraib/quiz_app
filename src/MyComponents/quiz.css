@@ -1,0 +1,78 @@
+/* Apply a background image to the body */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('D:\React_app\quiz-app\src\MyComponents\image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /*Prevent overflow*/
+}
+
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
+    position: relative; /* Ensure it's relative to its parent */
+}
+
+.container hr {
+    height: 2px;
+    border: none;
+    background: rgb(62, 2, 12);
+}
+
+.container h2 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid grey;
+    margin-bottom: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container button {
+    margin: auto;
+    width: 250px;
+    height: 55px;
+    background: blueviolet;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container.index {
+    margin: auto;
+    font-size: 18px;
+}
+
+.container .correct {
+    background: #b6f6b6;  /*green*/
+    border-color:#b6f6b6;
+}
+
+.container .wrong {
+    background: #f88f8e;     /*red*/
+    border-color: #f88f8e;
+}
